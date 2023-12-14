@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sk8 SHOP</title>
+  
+  <style>
+    /* CSSで全体をシックなイメージにする */
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* スケボーショップのロゴを表示する */
+    .logo {
+      width: 200px;
+      height: 100px;
+      margin: 20px auto;
+    }
+
+    /* ディスプレイのサイズと位置を指定する */
+    .display {
+      width: 800px;
+      height: 600px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      box-shadow: 5px 5px 10px #999;
+    }
+
+    /* ディスプレイ内の商品を表示する */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+    /* 商品の画像と名前を表示する */
+    .product {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: inset -2px -2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* 商品の名前を太字にする */
+    .product-name {
+      font-weight: bold;
+    }
+    
+    /* 商品の価格とカテゴリーを表示する */
+    .product-price {
+      color: green;
+      font-size: small;
+    }
+    
+    /* 商品のカテゴリーを太字にする */
+    .product-category {
+      font-weight: bold; 
+      
+     }
+     
+     /* 商品のカテゴリーごとに色分けする */
+     .product-category-1 {
+       color:#ff0000; 
+     }
+     
+     .product-category-2 {
+       color:#00ff00; 
+     }
+     
+     .product-category-3 {
+       color:#0000ff; 
+     }
+     
+   </style>
+</head>
+<body>
+   <!-- スケボーショップのロゴ -->
+   <img src="logo.png" alt="Logo" class="logo">
+   <h1>Sk8 SHOP</h1>
+   
+   <!-- ディスプレイ -->
+   <div class="display">
+     
+     <!-- 商品1 -->
+     <div class="product product-name product-price product-category product-category-1">
+       <img src="skateboard1.jpg" alt="Skateboard">
+       <p>Skateboard Deck</p>
+       <p>$99.99</p>
+       <p>Skateboard</p>
+     </div>
+
+     <!-- 商品2 -->
+     <div class="product product-name product-price product-category product-category-2">
+       <img src="skateboard2.jpg" alt="Skateboard">
+       <p>Skateboard Deck</p>
+       <p>$79.99</p>
+       <p>Skateboard</p>
+     </div>
+
+     <!-- 商品3 -->
+     <div class="product product-name product-price product-category product-category-3">
+       <img src="skateboard3.jpg" alt="Skateboard">
+       <p>Skateboard Deck</p>
+       <p>$59.99</p>
+       <p>Skateboard</p>
+     </div>
+
+   </div>
+
+</body>
